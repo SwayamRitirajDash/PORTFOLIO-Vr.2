@@ -1,0 +1,191 @@
+/* ==========================================
+                FOOTER
+========================================== */
+
+.footer{
+
+    padding:0 0 24px;
+
+}
+
+/* ==========================================
+            FOOTER CONTAINER
+========================================== */
+
+.footer .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:22px 28px;
+
+    box-shadow:var(--shadow);
+
+    transition:all var(--transition);
+
+}
+
+/* ==========================================
+            LEFT
+========================================== */
+
+.footer-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.footer-logo{
+
+    font-family:var(--heading-font);
+
+    font-size:1.35rem;
+
+    font-weight:800;
+
+    color:var(--text);
+
+}
+
+.footer-logo span{
+
+    color:var(--primary);
+
+}
+
+.footer-copy{
+
+    font-size:.9rem;
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================
+            CENTER
+========================================== */
+
+.footer-center{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.footer-center a{
+
+    font-size:.95rem;
+
+    color:var(--text-light);
+
+    transition:var(--transition);
+
+}
+
+.footer-center a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+            RIGHT
+========================================== */
+
+.footer-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.footer-social{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--surface-2);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    color:var(--text);
+
+    transition:all var(--transition);
+
+}
+
+.footer-social:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-color:var(--primary);
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+            BACK TO TOP
+========================================== */
+
+.back-top{
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-radius:14px;
+
+    transition:all var(--transition);
+
+}
+
+.back-top:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-3px);
+
+}

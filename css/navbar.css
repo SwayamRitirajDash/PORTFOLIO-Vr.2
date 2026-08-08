@@ -1,0 +1,247 @@
+/* ==========================================
+                NAVBAR
+========================================== */
+
+.navbar{
+
+    position:sticky;
+
+    top:18px;
+
+    z-index:1000;
+
+    margin-top:18px;
+
+}
+
+/* ==========================================
+            NAVBAR CONTAINER
+========================================== */
+
+.navbar-container{
+
+    height:74px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 28px;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    transition:all var(--transition);
+
+}
+
+/* ==========================================
+                LOGO
+========================================== */
+
+.logo{
+
+    font-family:var(--heading-font);
+
+    font-size:1.45rem;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    color:var(--text);
+
+    transition:var(--transition);
+
+}
+
+.logo:hover{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+            NAVIGATION
+========================================== */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.nav-links a:hover{
+
+    color:var(--text);
+
+}
+
+/* ==========================================
+            UNDERLINE
+========================================== */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after,
+
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+            RIGHT SIDE
+========================================== */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+/* ==========================================
+            THEME BUTTON
+========================================== */
+
+.theme-btn{
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--surface-2);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    transition:all var(--transition);
+
+}
+
+.theme-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-color:var(--primary);
+
+    transform:translateY(-2px);
+
+}
+
+.theme-btn i{
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+            MENU BUTTON
+========================================== */
+
+.menu-btn{
+
+    display:none;
+
+    width:46px;
+
+    height:46px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--surface-2);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    transition:all var(--transition);
+
+}
+
+.menu-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* ==========================================
+            ACTIVE LINK
+========================================== */
+
+.nav-links a.active{
+
+    color:var(--text);
+
+}

@@ -1,0 +1,165 @@
+/* ==========================================
+                HERO
+========================================== */
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    align-items:center;
+
+    min-height:440px;
+
+}
+
+/* ==========================================
+            LEFT
+========================================== */
+
+.hero-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    max-width:680px;
+
+    height:100%;
+
+}
+
+/* ==========================================
+            PROFILE
+========================================== */
+
+.hero-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:28px;
+
+}
+
+.hero-avatar{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid var(--primary);
+
+}
+
+.hero-profile-text span{
+
+    display:block;
+
+    font-size:.8rem;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:6px;
+
+}
+
+.hero-profile-text h4{
+
+    font-size:1.2rem;
+
+    color:var(--text);
+
+}
+
+/* ==========================================
+            TITLE
+========================================== */
+
+.hero h1{
+
+    font-size:4rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+    color:var(--text);
+
+}
+
+.hero h1 span{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+            SUBTITLE
+========================================== */
+
+.hero-subtitle{
+
+    font-size:1.2rem;
+
+    color:var(--text-light);
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================
+            DESCRIPTION
+========================================== */
+
+.hero-description{
+
+    max-width:580px;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    color:var(--text-light);
+
+    margin-bottom:32px;
+
+}
+
+/* ==========================================
+            BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-buttons .btn{
+
+    min-width:170px;
+
+}

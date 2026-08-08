@@ -1,0 +1,293 @@
+/* ==========================================
+                GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ==========================================
+                RESET
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/* ==========================================
+                HTML
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================================
+                BODY
+========================================== */
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:var(--body-font);
+
+    overflow-x:hidden;
+
+    transition:
+
+        background var(--transition),
+
+        color var(--transition);
+
+}
+
+/* ==========================================
+                CONTAINER
+========================================== */
+
+.container{
+
+    width:min(1380px,94%);
+
+    margin:auto;
+
+}
+
+/* ==========================================
+                HEADINGS
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--heading-font);
+
+    color:var(--text);
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+                PARAGRAPH
+========================================== */
+
+p{
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+                LINKS
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================
+                LIST
+========================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================================
+                IMAGE
+========================================== */
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+/* ==========================================
+                BUTTON
+========================================== */
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+}
+
+/* ==========================================
+                INPUT
+========================================== */
+
+input,
+textarea{
+
+    font-family:inherit;
+
+    outline:none;
+
+    border:none;
+
+}
+
+/* ==========================================
+                COMMON BUTTON
+========================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:13px 24px;
+
+    border-radius:16px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-2px);
+
+}
+
+.btn-secondary{
+
+    background:var(--surface-2);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+}
+
+.btn-secondary:hover{
+
+    border-color:var(--primary);
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+                CARD TITLE
+========================================== */
+
+.card-title{
+
+    font-size:1.6rem;
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================================
+                CARD LABEL
+========================================== */
+
+.card-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:var(--primary);
+
+    margin-bottom:16px;
+
+}
+
+/* ==========================================
+                SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+                SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--bg);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+}

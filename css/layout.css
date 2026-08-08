@@ -1,0 +1,247 @@
+/* ==========================================
+                MAIN
+========================================== */
+
+main{
+
+    padding:18px 0 30px;
+
+}
+
+/* ==========================================
+                DASHBOARD
+========================================== */
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:2.15fr .95fr .95fr;
+
+    grid-template-areas:
+
+    "hero connect resources"
+
+    "hero featured appearance"
+
+    "skills experience project"
+
+    "learning github certificates"
+
+    "contact contact newsletter";
+
+    gap:18px;
+
+}
+
+/* ==========================================
+                HERO
+========================================== */
+
+.hero{
+
+    grid-area:hero;
+
+    min-height:460px;
+
+}
+
+/* ==========================================
+            TOP RIGHT
+========================================== */
+
+.connect{
+
+    grid-area:connect;
+
+    min-height:190px;
+
+}
+
+.resources{
+
+    grid-area:resources;
+
+    min-height:190px;
+
+}
+
+.featured{
+
+    grid-area:featured;
+
+    min-height:190px;
+
+}
+
+.appearance{
+
+    grid-area:appearance;
+
+    min-height:190px;
+
+}
+
+/* ==========================================
+            MIDDLE ROW
+========================================== */
+
+.skills{
+
+    grid-area:skills;
+
+    min-height:250px;
+
+}
+
+.experience{
+
+    grid-area:experience;
+
+    min-height:250px;
+
+}
+
+.project{
+
+    grid-area:project;
+
+    min-height:250px;
+
+}
+
+/* ==========================================
+            THIRD ROW
+========================================== */
+
+.learning{
+
+    grid-area:learning;
+
+    min-height:185px;
+
+}
+
+.github{
+
+    grid-area:github;
+
+    min-height:185px;
+
+}
+
+.certificates{
+
+    grid-area:certificates;
+
+    min-height:185px;
+
+}
+
+/* ==========================================
+            LAST ROW
+========================================== */
+
+.contact{
+
+    grid-area:contact;
+
+    min-height:170px;
+
+}
+
+.newsletter{
+
+    grid-area:newsletter;
+
+    min-height:170px;
+
+}
+
+/* ==========================================
+            COMMON CARD
+========================================== */
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:22px;
+
+    box-shadow:var(--shadow);
+
+    transition:all var(--transition);
+
+}
+
+/* ==========================================
+            CARD HOVER
+========================================== */
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:rgba(233,30,99,.35);
+
+    box-shadow:
+
+    var(--shadow),
+
+    var(--glow);
+
+}
+
+/* ==========================================
+        CARD DECORATION
+========================================== */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+
+    circle at top right,
+
+    rgba(233,30,99,.05),
+
+    transparent 45%
+
+    );
+
+    pointer-events:none;
+
+}
+
+/* ==========================================
+            CONTENT
+========================================== */
+
+.card>*{
+
+    position:relative;
+
+    z-index:2;
+
+}

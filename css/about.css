@@ -1,0 +1,237 @@
+/* ==========================================
+                ABOUT PAGE
+========================================== */
+
+.about-hero{
+
+    position:relative;
+
+    min-height:92vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:30px;
+
+    overflow:hidden;
+
+}
+
+/* BIG BACKGROUND TEXT */
+
+.about-bg-title{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:12rem;
+
+    font-weight:800;
+
+    color:rgba(255,255,255,.03);
+
+    pointer-events:none;
+
+    user-select:none;
+
+    letter-spacing:10px;
+
+    white-space:nowrap;
+
+}
+
+/* LABEL */
+
+.section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:max-content;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:rgba(233,30,99,.08);
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+/* TITLE */
+
+.about-hero h1{
+
+    font-size:5rem;
+
+    line-height:1.05;
+
+    max-width:850px;
+
+    z-index:2;
+
+}
+
+.about-hero h1 span{
+
+    color:var(--primary);
+
+}
+
+/* PARAGRAPH */
+
+.about-intro{
+
+    max-width:760px;
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+    color:var(--text-light);
+
+    z-index:2;
+
+}
+
+/* INFO */
+
+.about-info{
+
+    display:flex;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.about-info div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--text);
+
+}
+
+.about-info i{
+
+    color:var(--primary);
+
+}
+
+
+
+/* ==========================================
+            TIMELINE
+========================================== */
+
+.about-timeline{
+
+    margin-top:140px;
+
+}
+
+.about-timeline h2{
+
+    font-size:2.8rem;
+
+    margin:25px 0 70px;
+
+}
+
+.timeline-wrapper{
+
+    position:relative;
+
+    margin-left:40px;
+
+    border-left:2px solid rgba(233,30,99,.25);
+
+    padding-left:50px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-bottom:70px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-62px;
+
+    top:6px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:0 0 18px rgba(233,30,99,.5);
+
+}
+
+.timeline-dot.future{
+
+    background:#ffffff;
+
+    box-shadow:0 0 18px rgba(255,255,255,.4);
+
+}
+
+.timeline-content span{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    font-size:.9rem;
+
+}
+
+.timeline-content h3{
+
+    margin:10px 0;
+
+    font-size:1.6rem;
+
+}
+
+.timeline-content p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    max-width:650px;
+
+}

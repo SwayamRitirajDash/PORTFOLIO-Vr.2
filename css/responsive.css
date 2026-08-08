@@ -1,0 +1,203 @@
+/* ==========================================
+            1200px
+========================================== */
+
+@media (max-width:1200px){
+
+    .dashboard{
+
+        grid-template-columns:1.8fr .9fr .9fr;
+
+    }
+
+    .hero h1{
+
+        font-size:3.3rem;
+
+    }
+
+}
+
+/* ==========================================
+            992px
+========================================== */
+
+@media (max-width:992px){
+
+    .dashboard{
+
+        grid-template-columns:1fr;
+
+        grid-template-areas:
+
+        "hero"
+        "connect"
+        "resources"
+        "featured"
+        "appearance"
+        "skills"
+        "experience"
+        "project"
+        "learning"
+        "github"
+        "certificates"
+        "contact"
+        "newsletter";
+
+    }
+
+    .hero{
+
+        min-height:auto;
+
+    }
+
+    .contact-box{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .newsletter-form{
+
+        flex-direction:column;
+
+    }
+
+    .newsletter-form button{
+
+        width:100%;
+
+        height:48px;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+}
+
+/* ==========================================
+            768px
+========================================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+    .navbar-container{
+
+        padding:0 20px;
+
+    }
+
+    .hero{
+
+        padding:10px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+    }
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .github-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================
+            576px
+========================================== */
+
+@media (max-width:576px){
+
+    .card{
+
+        padding:18px;
+
+    }
+
+    .hero-avatar{
+
+        width:60px;
+
+        height:60px;
+
+    }
+
+    .hero-profile{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .social-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer .container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .footer-center{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .footer-right{
+
+        justify-content:center;
+
+    }
+
+}
